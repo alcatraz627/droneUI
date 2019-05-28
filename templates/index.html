@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drone UI</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h2>Issue commands to drone</h2>
+        <span class="badge badge-pill badge-info">Prototype</span>
+        <hr />
+
+        <form v-on:submit.prevent="issueCommand">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter command to issue" v-model="newCommand">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-primary" type="submit">Send command</button>
+                </div>
+            </div>
+        </form>
+        <div id="console">
+            <div v-for="(item, index) in history">
+                [[item]]
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="{{url_for('static', filename='vue.js')}}"></script>
+<script src="{{url_for('static', filename='app.js')}}"></script>
+
+</html>
