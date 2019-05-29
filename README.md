@@ -1,3 +1,5 @@
+# UI to issue commands to drone
+
 Uses `Python 3` and `Flask` for Backend, `Vue` for Frontend
 
 - Set up by `pip install flask --user`
@@ -5,4 +7,4 @@ Uses `Python 3` and `Flask` for Backend, `Vue` for Frontend
 - Open browser at localhost:5000
 
 
-The drone API library is to be interfaced vua the exec_command function in /api/controller.py
+The drone API library is to be interfaced vua the `exec_command` function in _/api/controller.py_
