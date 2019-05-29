@@ -10,7 +10,7 @@ var vm = new Vue({
 	data: {
 		history: [],
 		status: commandStatus.EMPTY,
-		newCommand: 'ls'
+		newCommand: 'xuexuexue'
 	},
 
 	methods: {
